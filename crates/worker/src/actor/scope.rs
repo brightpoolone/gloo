@@ -135,8 +135,6 @@ where
     /// # Panics
     /// If the future panics, then the promise will not resolve, and
     /// will leak.
-    #[cfg(feature = "futures")]
-    #[cfg_attr(docsrs, doc(cfg(feature = "futures")))]
     pub fn callback_future<FN, FU, IN, M>(&self, function: FN) -> Rc<dyn Fn(IN)>
     where
         M: Into<W::Message>,
@@ -157,8 +155,6 @@ where
     ///
     /// # Panics
     /// If the future panics, then the promise will not resolve, and will leak.
-    #[cfg(feature = "futures")]
-    #[cfg_attr(docsrs, doc(cfg(feature = "futures")))]
     pub fn send_future<F, M>(&self, future: F)
     where
         M: Into<W::Message>,
