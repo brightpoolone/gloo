@@ -53,9 +53,7 @@
 
 mod actor;
 mod codec;
-#[cfg(feature = "futures")]
 pub mod oneshot;
-#[cfg(feature = "futures")]
 pub mod reactor;
 mod traits;
 
