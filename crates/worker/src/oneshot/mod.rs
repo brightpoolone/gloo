@@ -33,5 +33,4 @@ pub use traits::Oneshot;
 ///
 /// See [module level documentation](self) for more information.
 #[doc(inline)]
-#[cfg(feature = "futures")]
 pub use gloo_worker_macros::oneshot;
